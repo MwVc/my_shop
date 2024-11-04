@@ -1,3 +1,13 @@
+import { Button, Container } from "@mui/material";
+import { useEffect } from "react";
+
 export default function App() {
-  return <h1>This is myShop</h1>;
+  useEffect(() => {
+    document.title += " - Home";
+  });
+  return (
+    <Container maxWidth="xl" sx={{ background: "#fff" }}>
+      <Button>Test</Button>
+    </Container>
+  );
 }
